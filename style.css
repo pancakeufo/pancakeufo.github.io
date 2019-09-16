@@ -1,0 +1,99 @@
+button{
+	width: 250px;
+    height: auto;
+	background-color: #FFF;
+	color: #000;
+	border-radius: 12px;
+	padding: 0;
+	border: none;
+}
+
+.sButton {
+  background-color: #05A7AA; 
+  color: white;
+}
+
+.sButton:hover {
+  background-color: white;
+  color: black;
+}
+
+.cButton {
+  background-color: #633626; 
+  color: white;
+}
+
+.cButton:hover {
+  background-color: white;
+  color: black;
+}
+
+.zButton {
+  background-color: #1D1D1F; 
+  color: white;
+}
+
+.zButton:hover {
+  background-color: white;
+  color: black;
+}
+
+.iButton {
+  background-color: #0D5DD6; 
+  color: white;
+}
+
+.iButton:hover {
+  background-color: white;
+  color: black;
+}
+
+img{
+	width: 30%;
+	margin-top: 10px;
+	border-radius: 15px;
+}
+
+p{
+	font-size: 18px;
+}
+
+body{
+	background-color: #000;
+	background-image: url("https://coolbackgrounds.io/images/backgrounds/index/compute-ea4c57a4.png");
+}
+
+div{
+	margin-bottom: 30px;
+}
+
+h1{
+	font-size: 60px;
+	text-shadow: 2px 2px 8px #000;
+	color: white;
+}
+
+h2{
+	font-size: 20px;
+	text-shadow: 2px 2px 8px #000;
+	color: white;
+}
+
+h3{
+	font-size: 18px;
+	text-shadow: 2px 2px 8px #000;
+	color: white;
+}
+
+a:link {
+  color: #0D5DD6;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #0D5DD6;
+  text-decoration: none;
+}
+
+
+
