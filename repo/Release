@@ -1,0 +1,12 @@
+Origin: Pancakeufo's Repo
+Label: Pancakeufo's Repo
+Suite: stable
+Version: 1.0
+Codename: ios
+Architectures: iphoneos-arm
+Components: main
+Description: Tweak & Utilities for iOS
+
+SHA256:
+ 741f0af64e356484d1d8e13ba25776e03e1341201be945565ee124a043bbd584 911 Packages.bz2
+ 00798d6a65da2cca26154c3b8fd6d9242b5c556a047ea28aee7bc1575e30f966 856 Packages.xz
