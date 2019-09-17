@@ -3,13 +3,13 @@ function isLink(url){
 		new URL(url);
 		return true;
   } catch (_) {
-		return false;  
+		return false;
   }
 }
 
 function getSourceCydia(){
 	var cydia = "cydia://url/https://cydia.saurik.com/api/share#?source="
-	var repo = "https://pancakeufo.yourepo.com";
+	var repo = "https://pancakeufo.github.io/repo";
 	var queryString = window.location.href.split("source=");
 
 	if(queryString[1]){
@@ -23,7 +23,7 @@ function getSourceCydia(){
 
 function getSourceZebra(){
 	var zebra = "zbra://sources/add/"
-	var repo = "https://pancakeufo.yourepo.com";
+	var repo = "https://pancakeufo.github.io/repo";
 	var queryString = window.location.href.split("source=");
 
 	if(queryString[1]){
@@ -37,7 +37,7 @@ function getSourceZebra(){
 
 function getSourceSileo(){
 	var sileo = "sileo://source/"
-	var repo = "https://pancakeufo.yourepo.com";
+	var repo = "https://pancakeufo.github.io/repo";
 	var queryString = window.location.href.split("source=");
 
 	if(queryString[1]){
@@ -51,7 +51,7 @@ function getSourceSileo(){
 
 function getSourceInstaller(){
 	var installer = "installer://add/repo="
-	var repo = "https://pancakeufo.yourepo.com";
+	var repo = "https://pancakeufo.github.io/repo";
 	var queryString = window.location.href.split("source=");
 
 	if(queryString[1]){
