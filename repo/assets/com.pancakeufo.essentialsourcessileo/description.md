@@ -7,7 +7,7 @@
 • Se hai aggiunto delle repo già presenti del pacchetto non verranno generati duplicati    
 • Il pacchetto riceverà aggiornamenti in futuro: tienilo installato!
 &nbsp;   
-• Se vuoi contattarmi utilizza Twitter o Telegram → @pancakeufo_  
+• Se vuoi contattarmi utilizza Twitter o Telegram → @pancakeufo  
 &nbsp;    
 🇬🇧
 &nbsp;    
@@ -18,4 +18,4 @@
 &nbsp;    
 • This package is duplicate-proof and will get future updates!
 &nbsp;    
-_For inquiries send me a tweet or a text message @pancakeufo on Twitter or Telegram_
+• For inquiries send me a tweet or a text message @pancakeufo on Twitter or Telegram
