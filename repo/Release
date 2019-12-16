@@ -5,8 +5,8 @@ Version: 1.0
 Codename: ios
 Architectures: iphoneos-arm
 Components: main
-Description: Tweak & Utilities for iOS
+Description: Tweaks & Utilities for iOS
 
 SHA256:
- 3c125a0844732856896634d75ce89bedbeea264b7499860cde9dc96458c79df6 961 Packages.bz2
- 0cae49900ba57729db968a79e667ec39c4b3d1943fb7df6c5285273648b61771 888 Packages.xz
+ 984818e87def173e99eb4722c9ae15cb06e55a2fee90e97b25135bf3fe700d1b 1152 Packages.bz2
+ baf5e41c9ee29779704274305054589e23548ee0897088b24b7a36b51f8e44a3 1072 Packages.xz
