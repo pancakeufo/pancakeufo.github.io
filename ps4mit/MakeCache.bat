@@ -1,6 +1,6 @@
 @echo off
 echo CACHE MANIFEST > test0.txt
-echo # v1.5.6 X-PROJECT >> test0.txt
+echo # v1.5.7 X-PROJECT >> test0.txt
 echo # %DATE%-%TIME% >> test0.txt
 echo. >> test0.txt
 
@@ -8,7 +8,7 @@ set LOC=%~dp0
 
 dir /B /S /A:-D >> test0.txt
 
-findstr /v "media ESP-VERSION .bat .exe .mp4 offlinexmb.cache test0.txt" test0.txt > test.txt
+findstr /v "media ESP-VERSION .bat .exe .mp4 .cache test0.txt" test0.txt > test.txt
 del test0.txt
 
 @echo off
