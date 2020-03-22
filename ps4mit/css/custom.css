@@ -3,10 +3,6 @@
 	width: 210px;
 }*/
 /* Clock line colour */
-html,
-body {
- color:deepskyblue;
-}
 .clock {
   color: white;
 }
@@ -16,11 +12,11 @@ body {
 }
 /* XMB & payload icons colour */
 .cell.active {
-  color: inherit;
+  color: deepskyblue;
 }
 /* Payload title line colour */
 .titles.active {
-  color: inherit;
+  color: deepskyblue;
 }
 /* Payload description line colour */
 .desc {

@@ -1,9 +1,10 @@
 CACHE MANIFEST 
-# v1.5.7 X-PROJECT 
-# 17/03/2020-14:21:46.87 
+# v1.5.6 X-PROJECT 
+# 19/03/2020-11:44:10.73 
 
 avatar.png
 index.html
+wallpaper.jpg
 css\anim.css
 css\custom.css
 css\icons.css
@@ -13,7 +14,6 @@ icons\favicon.ico
 icons\user.png
 js\index.js
 js\lodash.min.js
-js\settings.js
 js\vue.js
 js\zepto.min.js
 payloads\apptousb.bin
@@ -68,8 +68,6 @@ payloads\exploit.js
 payloads\fancontrol.html
 payloads\fsdumper.bin
 payloads\fsdumper.html
-payloads\ftp.bin
-payloads\ftp.html
 payloads\ftprw.bin
 payloads\ftprw.html
 payloads\fwspoof.html
@@ -93,8 +91,8 @@ payloads\GTA_NotAnother127.bin
 payloads\GTA_NotAnother127.html
 payloads\GTA_NotYourDopes127.bin
 payloads\GTA_NotYourDopes127.html
-payloads\GTA_Psyc0s.bin
-payloads\GTA_Psyc0s.html
+payloads\GTA_Psych0s.bin
+payloads\GTA_Psych0s.html
 payloads\GTA_Trainer.bin
 payloads\GTA_Trainer.html
 payloads\GTA_WildeModz.bin
@@ -121,7 +119,6 @@ payloads\Hen20.bin
 payloads\Hen20.html
 payloads\Hen21.bin
 payloads\Hen21.html
-payloads\Hen211.bin
 payloads\Hen213.bin
 payloads\Hen213.html
 payloads\henauth.bin
@@ -129,8 +126,6 @@ payloads\henauth.html
 payloads\history.bin
 payloads\history.html
 payloads\ihrtm.html
-payloads\Infinix.bin
-payloads\Infinix.html
 payloads\jkpatch.html
 payloads\kdumper.bin
 payloads\kdumper.html
@@ -189,8 +184,6 @@ payloads\savemounter.bin
 payloads\savemounter.html
 payloads\screenshot.bin
 payloads\screenshot.html
-payloads\settings.html
-payloads\settingsloader.html
 payloads\stats.html
 payloads\statsloader.html
 payloads\syscall112.bin
@@ -218,6 +211,8 @@ payloads\vrEnable.bin
 payloads\vrEnable.html
 payloads\vtxdump.bin
 payloads\vtxdump.html
+payloads\vtxftp.bin
+payloads\vtxftp.html
 payloads\WebRTE.bin
 payloads\WebRTE.html
 payloads\xmbcache.html
@@ -226,9 +221,3 @@ payloads\player\player.html
 payloads\player\player.jpg
 payloads\player\ready.jpg
 payloads\player\stopped.jpg
-wallpaper\wallpaper1.jpg
-wallpaper\wallpaper2.jpg
-wallpaper\wallpaper3.jpg
-wallpaper\wallpaper4.jpg
-wallpaper\wallpaper5.jpg
-wallpaper\wallpaper6.jpg

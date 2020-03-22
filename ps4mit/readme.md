@@ -1,7 +1,5 @@
-**All credits goes to @DEFAULTDNB aka KiiWii (Twitter) and @Leeful (Twitter).**
+Everything **except the PS4MIT folder** is released under GPL 3.0
 
-**All rights are reserved to them.**
+Please take a look at LICENSE.md for further info
 
-**This is just a re-host.**
-
-**Please visit** https://www.psxhax.com/threads/x-project-updates-for-ps4-5-05-by-defaultdnb-kiiwii-and-leeful.6616/ **for licensing and more info.**
+~ pancakeufo

@@ -2,19 +2,12 @@ html,
 body {
  margin: 0;
  padding: 0;
- width:100%;
- height:100%;
- overflow:hidden;
- color:white;
- background-color:black;
+ width: 100%;
+ height: 100%;
+ overflow: hidden;
+ color: white;
+ background-color: black;
  font-family: sans-serif;
-}
-#MyContainer {
- position:fixed;left:0;right:0;top:60px;bottom:0;max-width:100%;max-height:100%;margin:auto;overflow:hidden;	
- border:0px solid yellow;
- width:99.9%;
- height:85%;
- z-index: 15;
 }
 .creditsBG {
  position:fixed;left:0;right:0;top:0;bottom:0;max-width:100%;max-height:100%;margin:auto;overflow:hidden;
@@ -40,7 +33,6 @@ body {
  font-size:30px;
  font-weight:bolder;
  text-align:center;
- color:white;
  z-index:901;
 }
 .avacontainer {
@@ -68,7 +60,7 @@ body {
  width: 875px;
  height: 90px;
  padding: 0px;
- background: transparent;
+ background: black;
  border: 0 ;
  z-index: 20;
  overflow:hidden;
@@ -81,33 +73,9 @@ body {
  width: 875px;
  height: 90px;
  padding: 0px 0px;
- background: transparent;
+ background: black;
  border: 0 ;
  z-index: 21;
- overflow:hidden;
-}
-.contents2 {
- position: fixed;left:0;right:0;top:0;
- margin: auto;
- width: 100%;
- height: 100%;
- padding: 0px;
-/*  background: black; */
- border: 0 ;
- z-index: 900;
- overflow:hidden;
-}
-.content2 {
- margin: auto;
- position: absolute;
- left: 0;
- right: 0;
- width: 100%;
- height: 100%;
- padding: 0px 0px;
-/*  background: black; */
- border: 0 ;
- z-index: 901;
  overflow:hidden;
 }
 .topmask {
@@ -116,9 +84,8 @@ body {
  left: 0;
  right: 0;
  width: 100%;
- height: 110px;
- background: transparent;
-/* background-image: linear-gradient(black,black,black,black,black,transparent); */
+ height: 100px;
+ background: black;
  border: 0 ;
  z-index: 19;
  overflow:hidden;
@@ -159,7 +126,6 @@ body {
  font-size: 15px;
  z-index: 21;
  cursor: pointer;
- color:white;
 }
 .ident {
  position: absolute;
@@ -168,7 +134,7 @@ body {
  margin-right: 1em;
  font-size: 22px;
  z-index: 21;
- color: white;
+ color: deepskyblue;
  cursor: pointer;
 }
 .selected {
@@ -226,17 +192,16 @@ body {
  font-size: 25px;
  z-index: 21;
  cursor: pointer;
- color:white;
 }
 #xmb-contain {
  width: 70%;
- height: 50%;
+ height: 70%;
  display: flex;
  flex-direction: column;
  justify-content: center;
  align-items: center;
  background-color: rgba(0, 0, 0, 0.01);
- color:inherit;
+ colour:inherit;
 }
 #xmb {
  width: 100px;
@@ -247,7 +212,7 @@ body {
  margin-bottom: 100px;
  margin-right: 200px;
  user-select: none;
- color:inherit;
+ colour:inherit;
 }
 #xmb > ul {
  display: flex;
@@ -257,7 +222,7 @@ body {
  flex-wrap: nowrap;
  flex-direction: row;
  justify-content: center;
- color:inherit;
+ color: inherit;
 }
 #xmb li,
 #xmb ul {
@@ -276,7 +241,7 @@ body {
  height: 100px;
  background-color: transparent;
  margin: 10px;
- opacity: 0.3;
+ opacity: 0.2;
  position: absolute;
  transition: all 0.3s;
  cursor: pointer;
