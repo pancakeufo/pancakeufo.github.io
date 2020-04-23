@@ -50,7 +50,7 @@ function getSourceSileo(){
 }
 
 function getSourceInstaller(){
-	var installer = "installer://add/repo="
+	var installer = "installer://add/"
 	var repo = "https://pancakeufo.github.io/repo";
 	var queryString = window.location.href.split("source=");
 
