@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="it" class="auto-color">
+<head>
+
+    <title>Installare IPA con Sideloadly</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="/assets/built/screen.css?v=1a5e5ecefb" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.20.1/tocbot.css">
+	<style>
+.gh-content {
+    position: relative;
+ }
+
+.gh-toc > .toc-list {
+    position: relative;
+}
+
+.toc-list {
+    overflow: hidden;
+    list-style: none;
+}
+
+@media (min-width: 1300px) {
+     .gh-sidebar {
+        position: absolute; 
+        top: 0;
+        bottom: 0;
+        margin-top: 4vmin;
+        grid-column: wide-start / main-start; /* Place the TOC to the left of the content */
+    }
+   
+    .gh-toc {
+        position: sticky; /* On larger screens, TOC will stay in the same spot on the page */
+        top: 4vmin;
+    }
+}
+
+.gh-toc .is-active-link::before {
+    background-color: var(--ghost-accent-color); /* Defines TOC   accent color based on Accent color set in Ghost Admin */
+} 
+</style>
+
+    <meta name="description" content="Sideloadly è un&#x27;alternativa a Cydia Impactor che permette di installare applicazioni in formato IPA" />
+    <link rel="icon" href="https://giacomo.tips/content/images/size/w256h256/2020/11/favicon-96x96.png" type="image/png" />
+    <link rel="canonical" href="https://giacomo.tips/sideloadly/" />
+    <meta name="referrer" content="no-referrer-when-downgrade" />
+    
+    <meta property="og:site_name" content="Giacomo" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Installare IPA con Sideloadly" />
+    <meta property="og:description" content="Sideloadly è un&#x27;alternativa a Cydia Impactor che permette di installare applicazioni in formato IPA" />
+    <meta property="og:url" content="https://giacomo.tips/sideloadly/" />
+    <meta property="og:image" content="https://giacomo.tips/content/images/2020/09/hero-side.png" />
+    <meta property="article:published_time" content="2020-09-30T19:44:48.000Z" />
+    <meta property="article:modified_time" content="2021-01-18T12:10:49.000Z" />
+    <meta property="article:tag" content="Jailbreak" />
+    
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Installare IPA con Sideloadly" />
+    <meta name="twitter:description" content="Sideloadly è un&#x27;alternativa a Cydia Impactor che permette di installare applicazioni in formato IPA" />
+    <meta name="twitter:url" content="https://giacomo.tips/sideloadly/" />
+    <meta name="twitter:image" content="https://giacomo.tips/content/images/2020/09/hero-side-1.png" />
+    <meta name="twitter:label1" content="Written by" />
+    <meta name="twitter:data1" content="Giacomo" />
+    <meta name="twitter:label2" content="Filed under" />
+    <meta name="twitter:data2" content="Jailbreak" />
+    <meta name="twitter:site" content="@pancakeufo" />
+    <meta property="og:image:width" content="1280" />
+    <meta property="og:image:height" content="720" />
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Giacomo",
+        "url": "https://giacomo.tips/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://giacomo.tips/content/images/size/w256h256/2020/11/favicon-96x96.png",
+            "width": 60,
+            "height": 60
+        }
+    },
+    "author": {
+        "@type": "Person",
+        "name": "Giacomo",
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://giacomo.tips/content/images/2022/06/photo_2022-06-17-11.35.52.jpeg",
+            "width": 640,
+            "height": 640
+        },
+        "url": "https://giacomo.tips/author/giacomo/",
+        "sameAs": []
+    },
+    "headline": "Installare IPA con Sideloadly",
+    "url": "https://giacomo.tips/sideloadly/",
+    "datePublished": "2020-09-30T19:44:48.000Z",
+    "dateModified": "2021-01-18T12:10:49.000Z",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://giacomo.tips/content/images/2020/09/hero-side.png",
+        "width": 1280,
+        "height": 720
+    },
+    "keywords": "Jailbreak",
+    "description": "Sideloadly è un&#x27;alternativa a Cydia Impactor che permette di installare applicazioni in formato IPA",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://giacomo.tips/"
+    }
+}
+    </script>
+
+    <meta name="generator" content="Ghost 5.36" />
+    <link rel="alternate" type="application/rss+xml" title="Giacomo" href="https://giacomo.tips/rss/" />
+    
+    <script defer src="https://cdn.jsdelivr.net/ghost/sodo-search@~1.1/umd/sodo-search.min.js" data-key="a47434ced8f8c412786e4d70d2" data-styles="https://cdn.jsdelivr.net/ghost/sodo-search@~1.1/umd/main.css" data-sodo-search="https://giacomo.tips/" crossorigin="anonymous"></script>
+    <link href="https://giacomo.tips/webmentions/receive/" rel="webmention" />
+    <script defer src="/public/cards.min.js?v=1a5e5ecefb"></script>
+    <link rel="stylesheet" type="text/css" href="/public/cards.min.css?v=1a5e5ecefb">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/brands.min.css" integrity="sha512-+oRH6u1nDGSm3hH8poU85YFIVTdSnS2f+texdPGrURaJh8hzmhMiZrQth6l56P4ZQmxeZzd2DqVEMqQoJ8J89A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<style>
+    .gh-head-menu .nav-twitter a,
+    .gh-head-menu .nav-github a,
+    .gh-head-menu .nav-mastodon a {
+        font-size: 0 !important;
+    }
+
+    .gh-head-menu .nav-twitter a::before,
+    .gh-head-menu .nav-github a::before,
+    .gh-head-menu .nav-mastodon a::before {
+        font-family: "Font Awesome 6 Brands";
+        display: inline-block;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+    }
+
+    .gh-head-menu .nav-twitter a::before {content: "\f099"}
+    .gh-head-menu .nav-github a::before {content: "\f09b"}
+    .gh-head-menu .nav-mastodon a::before {content: "\f4f6"}
+</style><style>:root {--ghost-accent-color: #15171A;}</style>
+
+</head>
+<body class="post-template tag-jailbreak is-head-left-logo has-cover">
+<div class="viewport">
+
+    <header id="gh-head" class="gh-head outer">
+        <div class="gh-head-inner inner">
+            <div class="gh-head-brand">
+                <a class="gh-head-logo no-image" href="https://giacomo.tips">
+                        Giacomo
+                </a>
+                <button class="gh-search gh-icon-btn" aria-label="Search this site" data-ghost-search><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" width="20" height="20"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg></button>
+                <button class="gh-burger"></button>
+            </div>
+
+            <nav class="gh-head-menu">
+                <ul class="nav">
+    <li class="nav-home"><a href="https://giacomo.tips/">home</a></li>
+    <li class="nav-work"><a href="https://giacomo.tips/jbstatus/">work</a></li>
+    <li class="nav-whoami"><a href="https://giacomo.tips/whoami/">whoami</a></li>
+    <li class="nav-twitter"><a href="https://twitter.com/pancakeufo">twitter</a></li>
+    <li class="nav-mastodon"><a href="https://infosec.exchange/@pancakeufo">mastodon</a></li>
+    <li class="nav-github"><a href="https://github.com/pancakeufo">github</a></li>
+</ul>
+
+            </nav>
+
+            <div class="gh-head-actions">
+                        <button class="gh-search gh-icon-btn" data-ghost-search><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" width="20" height="20"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg></button>
+            </div>
+        </div>
+    </header>
+
+    <div class="site-content">
+        
+
+
+
+<main id="site-main" class="site-main">
+<article class="article post tag-jailbreak featured ">
+
+    <header class="article-header gh-canvas">
+
+        <div class="article-tag post-card-tags">
+                <span class="post-card-primary-tag">
+                    <a href="/tag/jailbreak/">Jailbreak</a>
+                </span>
+                <span class="post-card-featured"><svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M4.49365 4.58752C3.53115 6.03752 2.74365 7.70002 2.74365 9.25002C2.74365 10.6424 3.29678 11.9778 4.28134 12.9623C5.26591 13.9469 6.60127 14.5 7.99365 14.5C9.38604 14.5 10.7214 13.9469 11.706 12.9623C12.6905 11.9778 13.2437 10.6424 13.2437 9.25002C13.2437 6.00002 10.9937 3.50002 9.16865 1.68127L6.99365 6.25002L4.49365 4.58752Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg> Featured</span>
+        </div>
+
+        <h1 class="article-title">Installare IPA con Sideloadly</h1>
+
+            <p class="article-excerpt">Sideloadly è un&#x27;alternativa a Cydia Impactor che permette di installare applicazioni in formato IPA</p>
+
+        <div class="article-byline">
+        <section class="article-byline-content">
+
+            <ul class="author-list">
+                <li class="author-list-item">
+                    <a href="/author/giacomo/" class="author-avatar">
+                        <img class="author-profile-image" src="/content/images/size/w100/2022/06/photo_2022-06-17-11.35.52.jpeg" alt="Giacomo" />
+                    </a>
+                </li>
+            </ul>
+
+            <div class="article-byline-meta">
+                <h4 class="author-name"><a href="/author/giacomo/">Giacomo</a></h4>
+                <div class="byline-meta-content">
+                    <time class="byline-meta-date" datetime="2020-09-30">30 set 2020</time>
+                        <span class="byline-reading-time"><span class="bull">&bull;</span> 3 min read</span>
+                </div>
+            </div>
+
+        </section>
+        </div>
+
+            <figure class="article-image">
+                <img
+                    srcset="/content/images/size/w300/2020/09/hero-side.png 300w,
+                            /content/images/size/w600/2020/09/hero-side.png 600w,
+                            /content/images/size/w1000/2020/09/hero-side.png 1000w,
+                            /content/images/size/w2000/2020/09/hero-side.png 2000w"
+                    sizes="(min-width: 1400px) 1400px, 92vw"
+                    src="/content/images/size/w2000/2020/09/hero-side.png"
+                    alt="Installare IPA con Sideloadly"
+                />
+            </figure>
+
+    </header>
+
+    <section class="gh-content gh-canvas">
+	<aside class="gh-sidebar"><div class="gh-toc"></div></aside> 
+        <hr><h3 id="informazioni-preliminari">Informazioni Preliminari</h3><p></p><ul><li>Questa guida &#xE8; per Windows, <strong><strong>se hai un Mac</strong></strong> segui la guida ad <a href="https://giacomo.tips/altstore/">AltDeploy</a></li></ul><hr><h3 id="installazione-componenti">Installazione Componenti</h3><p></p><!--kg-card-begin: markdown--><ul>
+<li>Scarica <a href="https://armconverter.com/sideloadly/SideloadlySetup.exe?ref=giacomo">Sideloadly</a></li>
+<li>Scarica iTunes da <a href="https://www.apple.com/itunes/download/win64?ref=giacomo">questo link</a>
+<ul>
+<li>se lo hai gi&#xE0; installato dal Microsoft Store <a href="https://www.aranzulla.it/come-disinstallare-un-programma-dal-pc-14340.html?ref=giacomo">disinstallalo</a></li>
+</ul>
+</li>
+</ul>
+<!--kg-card-end: markdown--><figure class="kg-card kg-image-card"><img src="https://giacomo.tips/content/images/2020/09/explorer_e50BJ4fgtM.png" class="kg-image" alt loading="lazy" width="1769" height="1032" srcset="https://giacomo.tips/content/images/size/w600/2020/09/explorer_e50BJ4fgtM.png 600w, https://giacomo.tips/content/images/size/w1000/2020/09/explorer_e50BJ4fgtM.png 1000w, https://giacomo.tips/content/images/size/w1600/2020/09/explorer_e50BJ4fgtM.png 1600w, https://giacomo.tips/content/images/2020/09/explorer_e50BJ4fgtM.png 1769w" sizes="(min-width: 720px) 720px"></figure><ul><li>Apri <code>iTunes64Setup</code></li><li>Fai click su <strong><strong>Avanti &gt;</strong></strong></li></ul><figure class="kg-card kg-image-card"><img src="https://giacomo.tips/content/images/2020/09/Schermata-2020-06-27-alle-15.23.12-min-1.png" class="kg-image" alt loading="lazy" width="1692" height="1064" srcset="https://giacomo.tips/content/images/size/w600/2020/09/Schermata-2020-06-27-alle-15.23.12-min-1.png 600w, https://giacomo.tips/content/images/size/w1000/2020/09/Schermata-2020-06-27-alle-15.23.12-min-1.png 1000w, https://giacomo.tips/content/images/size/w1600/2020/09/Schermata-2020-06-27-alle-15.23.12-min-1.png 1600w, https://giacomo.tips/content/images/2020/09/Schermata-2020-06-27-alle-15.23.12-min-1.png 1692w" sizes="(min-width: 720px) 720px"></figure><ul><li>Fai click su <strong><strong>Installa</strong></strong></li></ul><figure class="kg-card kg-image-card"><img src="https://giacomo.tips/content/images/2020/09/Schermata-2020-06-27-alle-15.23.16-min.png" class="kg-image" alt loading="lazy" width="1690" height="1046" srcset="https://giacomo.tips/content/images/size/w600/2020/09/Schermata-2020-06-27-alle-15.23.16-min.png 600w, https://giacomo.tips/content/images/size/w1000/2020/09/Schermata-2020-06-27-alle-15.23.16-min.png 1000w, https://giacomo.tips/content/images/size/w1600/2020/09/Schermata-2020-06-27-alle-15.23.16-min.png 1600w, https://giacomo.tips/content/images/2020/09/Schermata-2020-06-27-alle-15.23.16-min.png 1690w" sizes="(min-width: 720px) 720px"></figure><ul><li>Se il tuo computer chiede conferma fai click su <strong><strong>Si</strong></strong></li></ul><figure class="kg-card kg-image-card"><img src="https://giacomo.tips/content/images/2020/09/Schermata-2020-06-27-alle-15.23.22-min.png" class="kg-image" alt loading="lazy" width="992" height="734" srcset="https://giacomo.tips/content/images/size/w600/2020/09/Schermata-2020-06-27-alle-15.23.22-min.png 600w, https://giacomo.tips/content/images/2020/09/Schermata-2020-06-27-alle-15.23.22-min.png 992w" sizes="(min-width: 720px) 720px"></figure><ul><li>Deseleziona la spunta <code>Apri iTunes al termine del programma di installazione</code></li><li>Fai click su <strong><strong>Fine</strong></strong></li></ul><figure class="kg-card kg-image-card"><img src="https://giacomo.tips/content/images/2020/09/Schermata-2020-06-27-alle-15.24.04-min.png" class="kg-image" alt loading="lazy" width="1660" height="1052" srcset="https://giacomo.tips/content/images/size/w600/2020/09/Schermata-2020-06-27-alle-15.24.04-min.png 600w, https://giacomo.tips/content/images/size/w1000/2020/09/Schermata-2020-06-27-alle-15.24.04-min.png 1000w, https://giacomo.tips/content/images/size/w1600/2020/09/Schermata-2020-06-27-alle-15.24.04-min.png 1600w, https://giacomo.tips/content/images/2020/09/Schermata-2020-06-27-alle-15.24.04-min.png 1660w" sizes="(min-width: 720px) 720px"></figure><!--kg-card-begin: markdown--><ul>
+<li>Torna alla cartella precedente</li>
+</ul>
+<!--kg-card-end: markdown--><figure class="kg-card kg-image-card"><img src="https://giacomo.tips/content/images/2020/09/explorer_e50BJ4fgtM.png" class="kg-image" alt loading="lazy" width="1769" height="1032" srcset="https://giacomo.tips/content/images/size/w600/2020/09/explorer_e50BJ4fgtM.png 600w, https://giacomo.tips/content/images/size/w1000/2020/09/explorer_e50BJ4fgtM.png 1000w, https://giacomo.tips/content/images/size/w1600/2020/09/explorer_e50BJ4fgtM.png 1600w, https://giacomo.tips/content/images/2020/09/explorer_e50BJ4fgtM.png 1769w" sizes="(min-width: 720px) 720px"></figure><!--kg-card-begin: markdown--><ul>
+<li>Apri <code>SideloadlySetup</code></li>
+<li>Fai click su <strong>Next &gt;</strong></li>
+</ul>
+<!--kg-card-end: markdown--><figure class="kg-card kg-image-card"><img src="https://giacomo.tips/content/images/2020/09/SideloadlySetup_24eGfDOQYt.png" class="kg-image" alt loading="lazy" width="1092" height="899" srcset="https://giacomo.tips/content/images/size/w600/2020/09/SideloadlySetup_24eGfDOQYt.png 600w, https://giacomo.tips/content/images/size/w1000/2020/09/SideloadlySetup_24eGfDOQYt.png 1000w, https://giacomo.tips/content/images/2020/09/SideloadlySetup_24eGfDOQYt.png 1092w" sizes="(min-width: 720px) 720px"></figure><ul><li>Fai nuovamente click su <strong>Next &gt;</strong></li><li>Il processo di installazione avr&#xE0; inizio</li></ul><figure class="kg-card kg-image-card"><img src="https://giacomo.tips/content/images/2020/09/SideloadlySetup_TwNHlyPzX8.png" class="kg-image" alt loading="lazy" width="1092" height="899" srcset="https://giacomo.tips/content/images/size/w600/2020/09/SideloadlySetup_TwNHlyPzX8.png 600w, https://giacomo.tips/content/images/size/w1000/2020/09/SideloadlySetup_TwNHlyPzX8.png 1000w, https://giacomo.tips/content/images/2020/09/SideloadlySetup_TwNHlyPzX8.png 1092w" sizes="(min-width: 720px) 720px"></figure><ul><li>Fai click su <strong>Finish </strong>al termine</li></ul><figure class="kg-card kg-image-card"><img src="https://giacomo.tips/content/images/2020/09/SideloadlySetup_88k4qEhEtG.png" class="kg-image" alt loading="lazy" width="1092" height="899" srcset="https://giacomo.tips/content/images/size/w600/2020/09/SideloadlySetup_88k4qEhEtG.png 600w, https://giacomo.tips/content/images/size/w1000/2020/09/SideloadlySetup_88k4qEhEtG.png 1000w, https://giacomo.tips/content/images/2020/09/SideloadlySetup_88k4qEhEtG.png 1092w" sizes="(min-width: 720px) 720px"></figure><hr><h3 id="procedimento">Procedimento</h3><p></p><!--kg-card-begin: markdown--><ul>
+<li>A questo punto Sideloadly dovrebbe essersi aperto
+<ul>
+<li>se cos&#xEC; non fosse cercalo nel <a href="https://support.microsoft.com/it-it/help/4028294/windows-open-the-start-menu?ref=giacomo">menu Start</a> di Windows</li>
+</ul>
+</li>
+</ul>
+<!--kg-card-end: markdown--><figure class="kg-card kg-image-card"><img src="https://giacomo.tips/content/images/2020/09/sideloadly_4x5UpRpblN.png" class="kg-image" alt loading="lazy" width="734" height="587" srcset="https://giacomo.tips/content/images/size/w600/2020/09/sideloadly_4x5UpRpblN.png 600w, https://giacomo.tips/content/images/2020/09/sideloadly_4x5UpRpblN.png 734w" sizes="(min-width: 720px) 720px"></figure><!--kg-card-begin: markdown--><ul>
+<li>Collega ora il tuo device al computer e sbloccalo
+<ul>
+<li>se richiede di autorizzare il computer consenti l&apos;operazione</li>
+</ul>
+</li>
+<li>Digita l&apos;indirizzo mail del tuo Apple ID nel campo <code>Apple Account</code></li>
+<li>Fai click sull&apos;icona <code>IPA</code> e seleziona il file IPA desiderato</li>
+<li>SE hai iOS 8 &#x2192; 12.2 prima di procedere fai click su <strong>Advanced Options</strong> dopodich&#xE8; abilita <strong>Try to support iOS 8+</strong>
+<ul>
+<li>la funzione &#xE8; sperimentale e potrebbe fallire</li>
+<li>il supporto potrebbe includere anche iOS 7
+<ul>
+<li>ad oggi n&#xE8; io n&#xE8; il dev abbiamo avuto modo di provare</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>L&apos;interfaccia dovrebbe presentarsi cos&#xEC;:</li>
+</ul>
+<!--kg-card-end: markdown--><figure class="kg-card kg-image-card"><img src="https://giacomo.tips/content/images/2020/09/sideloadly_425dJu7uxG-1.png" class="kg-image" alt loading="lazy" width="734" height="587" srcset="https://giacomo.tips/content/images/size/w600/2020/09/sideloadly_425dJu7uxG-1.png 600w, https://giacomo.tips/content/images/2020/09/sideloadly_425dJu7uxG-1.png 734w" sizes="(min-width: 720px) 720px"></figure><!--kg-card-begin: markdown--><ul>
+<li>Fai click su <strong>Start</strong></li>
+<li>Inserisci la password del tuo ID Apple</li>
+<li><strong>Se il login fallisce</strong>, recati su <a href="https://appleid.apple.com/?ref=giacomo">https://appleid.apple.com</a> e genera una password nella sezione <strong>Password Specifiche Per App</strong>: copiala, segnala da qualche parte per il futuro e usatela come password per Sideloadly</li>
+<li>A questo il processo di l&apos;installazione avr&#xE0; inizio:</li>
+</ul>
+<!--kg-card-end: markdown--><figure class="kg-card kg-image-card"><img src="https://giacomo.tips/content/images/2020/09/sideloadly_8ZNjYi4UCX-1.png" class="kg-image" alt loading="lazy" width="734" height="587" srcset="https://giacomo.tips/content/images/size/w600/2020/09/sideloadly_8ZNjYi4UCX-1.png 600w, https://giacomo.tips/content/images/2020/09/sideloadly_8ZNjYi4UCX-1.png 734w" sizes="(min-width: 720px) 720px"></figure><!--kg-card-begin: markdown--><ul>
+<li>Quando appare <code>Idle.</code> l&apos;operazione sar&#xE0; completata</li>
+</ul>
+<!--kg-card-end: markdown--><figure class="kg-card kg-image-card"><img src="https://giacomo.tips/content/images/2020/09/sideloadly_EDc6DPKjPj.png" class="kg-image" alt loading="lazy" width="734" height="587" srcset="https://giacomo.tips/content/images/size/w600/2020/09/sideloadly_EDc6DPKjPj.png 600w, https://giacomo.tips/content/images/2020/09/sideloadly_EDc6DPKjPj.png 734w" sizes="(min-width: 720px) 720px"></figure><ul><li>Spostati ora sul tuo iPhone / iPad / iPod Touch</li><li>Apri le Impostazioni e spostati in <code>Generali &#x2192; Gestione Dispositivo</code> dopodich&#xE8; tocca il profilo che recita la mail del nostro Apple ID</li><li>Tocca <strong><strong>Autorizza</strong></strong></li><li>Ora che hai autorizzato il profilo l&apos;app si aprir&#xE0;</li><li>Ricorda che l&apos;app rester&#xE0; firmata per 7 giorni, poi dovrai reinstallarla</li></ul><figure class="kg-card kg-image-card"><img src="https://giacomo.tips/content/images/2020/04/combined-min-1.png" class="kg-image" alt loading="lazy"></figure><hr><h3 id="domande-extra">Domande &amp; Extra</h3><p>&#x1F914; <a href="https://t.me/locandajailbreak?ref=giacomo">Ho bisogno di aiuto!</a><br>&#x1F5DE; <a href="https://t.me/giacomotips?ref=giacomo">Canale Telegram</a><br>&#x2764;&#xFE0F; <a href="https://ko-fi.com/pancakeufo?ref=giacomo">Donazioni</a></p>
+    </section>
+
+
+</article>
+</main>
+
+
+
+
+            <aside class="read-more-wrap outer">
+                <div class="read-more inner">
+                        
+<article class="post-card post featured">
+
+    <a class="post-card-image-link" href="/unc0ver/">
+
+        <img class="post-card-image"
+            srcset="/content/images/size/w300/2020/06/unc0ver-min-2-copia-min-1-4-2.jpg 300w,
+                    /content/images/size/w600/2020/06/unc0ver-min-2-copia-min-1-4-2.jpg 600w,
+                    /content/images/size/w1000/2020/06/unc0ver-min-2-copia-min-1-4-2.jpg 1000w,
+                    /content/images/size/w2000/2020/06/unc0ver-min-2-copia-min-1-4-2.jpg 2000w"
+            sizes="(max-width: 1000px) 400px, 800px"
+            src="/content/images/size/w600/2020/06/unc0ver-min-2-copia-min-1-4-2.jpg"
+            alt="Eseguire il Jailbreak con Unc0ver"
+            loading="lazy"
+        />
+
+
+    </a>
+
+    <div class="post-card-content">
+
+        <a class="post-card-content-link" href="/unc0ver/">
+            <header class="post-card-header">
+                <div class="post-card-tags">
+                        <span class="post-card-featured"><svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M4.49365 4.58752C3.53115 6.03752 2.74365 7.70002 2.74365 9.25002C2.74365 10.6424 3.29678 11.9778 4.28134 12.9623C5.26591 13.9469 6.60127 14.5 7.99365 14.5C9.38604 14.5 10.7214 13.9469 11.706 12.9623C12.6905 11.9778 13.2437 10.6424 13.2437 9.25002C13.2437 6.00002 10.9937 3.50002 9.16865 1.68127L6.99365 6.25002L4.49365 4.58752Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg> Featured</span>
+                </div>
+                <h2 class="post-card-title">
+                    Eseguire il Jailbreak con Unc0ver
+                </h2>
+            </header>
+                <div class="post-card-excerpt">Questa guida vi spiegherà come eseguire il jailbreak con Unc0ver, tool per le versioni di iOS da 11.0 a 14.8</div>
+        </a>
+
+        <footer class="post-card-meta">
+            <time class="post-card-meta-date" datetime="2022-12-30">30 dic 2022</time>
+                <span class="post-card-meta-length">2 min read</span>
+        </footer>
+
+    </div>
+
+</article>
+                        
+<article class="post-card post featured">
+
+    <a class="post-card-image-link" href="/jbstatus/">
+
+        <img class="post-card-image"
+            srcset="/content/images/size/w300/2022/09/cover-jbstatus-min.png 300w,
+                    /content/images/size/w600/2022/09/cover-jbstatus-min.png 600w,
+                    /content/images/size/w1000/2022/09/cover-jbstatus-min.png 1000w,
+                    /content/images/size/w2000/2022/09/cover-jbstatus-min.png 2000w"
+            sizes="(max-width: 1000px) 400px, 800px"
+            src="/content/images/size/w600/2022/09/cover-jbstatus-min.png"
+            alt="Posso fare il Jailbreak?"
+            loading="lazy"
+        />
+
+
+    </a>
+
+    <div class="post-card-content">
+
+        <a class="post-card-content-link" href="/jbstatus/">
+            <header class="post-card-header">
+                <div class="post-card-tags">
+                        <span class="post-card-featured"><svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M4.49365 4.58752C3.53115 6.03752 2.74365 7.70002 2.74365 9.25002C2.74365 10.6424 3.29678 11.9778 4.28134 12.9623C5.26591 13.9469 6.60127 14.5 7.99365 14.5C9.38604 14.5 10.7214 13.9469 11.706 12.9623C12.6905 11.9778 13.2437 10.6424 13.2437 9.25002C13.2437 6.00002 10.9937 3.50002 9.16865 1.68127L6.99365 6.25002L4.49365 4.58752Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg> Featured</span>
+                </div>
+                <h2 class="post-card-title">
+                    Posso fare il Jailbreak?
+                </h2>
+            </header>
+                <div class="post-card-excerpt">Scopri se è possibile effettuare il jailbreak sul tuo iPhone, iPad, iPod touch o Apple TV!</div>
+        </a>
+
+        <footer class="post-card-meta">
+            <time class="post-card-meta-date" datetime="2022-09-13">13 set 2022</time>
+                <span class="post-card-meta-length">1 min read</span>
+        </footer>
+
+    </div>
+
+</article>
+                        
+<article class="post-card post">
+
+    <a class="post-card-image-link" href="/checkra1n/">
+
+        <img class="post-card-image"
+            srcset="/content/images/size/w300/2020/04/jailbreaktut-min.jpg 300w,
+                    /content/images/size/w600/2020/04/jailbreaktut-min.jpg 600w,
+                    /content/images/size/w1000/2020/04/jailbreaktut-min.jpg 1000w,
+                    /content/images/size/w2000/2020/04/jailbreaktut-min.jpg 2000w"
+            sizes="(max-width: 1000px) 400px, 800px"
+            src="/content/images/size/w600/2020/04/jailbreaktut-min.jpg"
+            alt="Eseguire il Jailbreak con Checkra1n"
+            loading="lazy"
+        />
+
+
+    </a>
+
+    <div class="post-card-content">
+
+        <a class="post-card-content-link" href="/checkra1n/">
+            <header class="post-card-header">
+                <div class="post-card-tags">
+                </div>
+                <h2 class="post-card-title">
+                    Eseguire il Jailbreak con Checkra1n
+                </h2>
+            </header>
+                <div class="post-card-excerpt">Questa guida vi spiegherà come eseguire il jailbreak con Checkra1n, tool per le versioni di iOS da 12.0 a 14.8</div>
+        </a>
+
+        <footer class="post-card-meta">
+            <time class="post-card-meta-date" datetime="2021-12-30">30 dic 2021</time>
+                <span class="post-card-meta-length">5 min read</span>
+        </footer>
+
+    </div>
+
+</article>
+                </div>
+            </aside>
+
+
+
+    </div>
+
+    <footer class="site-footer outer">
+        <div class="inner">
+            <section class="copyright"><a href="https://giacomo.tips">Giacomo</a> &copy; 2023</section>
+            <nav class="site-footer-nav">
+                
+            </nav>
+            <div><a href="https://ghost.org/" target="_blank" rel="noopener">Powered by Ghost</a></div>
+        </div>
+    </footer>
+
+</div>
+
+
+<script
+    src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+    crossorigin="anonymous">
+</script>
+<script src="/assets/built/casper.js?v=1a5e5ecefb"></script>
+<script>
+$(document).ready(function () {
+    // Mobile Menu Trigger
+    $('.gh-burger').click(function () {
+        $('body').toggleClass('gh-head-open');
+    });
+    // FitVids - Makes video embeds responsive
+    $(".gh-content").fitVids();
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.20.1/tocbot.min.js"></script>
+<script>
+    tocbot.init({
+        // Where to render the table of contents.
+        tocSelector: '.gh-toc',
+        // Where to grab the headings to build the table of contents.
+        contentSelector: '.gh-content',
+        // Which headings to grab inside of the contentSelector element.
+        headingSelector: 'h1, h2, h3, h4',
+        // Ensure correct positioning
+        hasInnerContainers: true,
+    });
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="it" class="auto-color">
+<head>
+
+    <title>Salvare Blobs SHSH2 (A12-A14)</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="/assets/built/screen.css?v=1a5e5ecefb" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.20.1/tocbot.css">
+	<style>
+.gh-content {
+    position: relative;
+ }
+
+.gh-toc > .toc-list {
+    position: relative;
+}
+
+.toc-list {
+    overflow: hidden;
+    list-style: none;
+}
+
+@media (min-width: 1300px) {
+     .gh-sidebar {
+        position: absolute; 
+        top: 0;
+        bottom: 0;
+        margin-top: 4vmin;
+        grid-column: wide-start / main-start; /* Place the TOC to the left of the content */
+    }
+   
+    .gh-toc {
+        position: sticky; /* On larger screens, TOC will stay in the same spot on the page */
+        top: 4vmin;
+    }
+}
+
+.gh-toc .is-active-link::before {
+    background-color: var(--ghost-accent-color); /* Defines TOC   accent color based on Accent color set in Ghost Admin */
+} 
+</style>
+
+    <link rel="icon" href="https://giacomo.tips/content/images/size/w256h256/2020/11/favicon-96x96.png" type="image/png" />
+    <link rel="canonical" href="https://giacomo.tips/shsh-arm64e/" />
+    <meta name="referrer" content="no-referrer-when-downgrade" />
+    
+    <meta property="og:site_name" content="Giacomo" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Salvare Blobs SHSH2 (A12-A14)" />
+    <meta property="og:description" content="⚠️ ATTENZIONE ⚠️
+
+⁣
+Questa pagina si riferisce ai device con processore A12 o superiore.
+Se sei arrivato a questa pagina da Google tocca qui
+
+
+Metodo 1 (Consigliato)
+
+
+
+ * Il tuo device deve essere jailbrekkato con Unc0ver o Checkra1n
+
+
+ * Aggiungi questa repository a Cydia / Zebra / Installer
+   
+   * Se hai problemi ad aggiungerla riprova con questo" />
+    <meta property="og:url" content="https://giacomo.tips/shsh-arm64e/" />
+    <meta property="og:image" content="https://giacomo.tips/content/images/2020/12/photo_2020-11-10-18.22.30-1.jpeg" />
+    <meta property="article:published_time" content="2021-03-07T14:10:21.000Z" />
+    <meta property="article:modified_time" content="2021-03-08T13:40:47.000Z" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Salvare Blobs SHSH2 (A12-A14)" />
+    <meta name="twitter:description" content="⚠️ ATTENZIONE ⚠️
+
+⁣
+Questa pagina si riferisce ai device con processore A12 o superiore.
+Se sei arrivato a questa pagina da Google tocca qui
+
+
+Metodo 1 (Consigliato)
+
+
+
+ * Il tuo device deve essere jailbrekkato con Unc0ver o Checkra1n
+
+
+ * Aggiungi questa repository a Cydia / Zebra / Installer
+   
+   * Se hai problemi ad aggiungerla riprova con questo" />
+    <meta name="twitter:url" content="https://giacomo.tips/shsh-arm64e/" />
+    <meta name="twitter:image" content="https://giacomo.tips/content/images/2023/02/jannis-brandt-4mHaSX8zvJI-unsplash.jpg" />
+    <meta name="twitter:label1" content="Written by" />
+    <meta name="twitter:data1" content="Giacomo" />
+    <meta name="twitter:site" content="@pancakeufo" />
+    <meta property="og:image:width" content="2000" />
+    <meta property="og:image:height" content="1335" />
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Giacomo",
+        "url": "https://giacomo.tips/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://giacomo.tips/content/images/size/w256h256/2020/11/favicon-96x96.png",
+            "width": 60,
+            "height": 60
+        }
+    },
+    "author": {
+        "@type": "Person",
+        "name": "Giacomo",
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://giacomo.tips/content/images/2022/06/photo_2022-06-17-11.35.52.jpeg",
+            "width": 640,
+            "height": 640
+        },
+        "url": "https://giacomo.tips/author/giacomo/",
+        "sameAs": []
+    },
+    "headline": "Salvare Blobs SHSH2 (A12-A14)",
+    "url": "https://giacomo.tips/shsh-arm64e/",
+    "datePublished": "2021-03-07T14:10:21.000Z",
+    "dateModified": "2021-03-08T13:40:47.000Z",
+    "description": "⚠️ ATTENZIONE ⚠️\n\n⁣\nQuesta pagina si riferisce ai device con processore A12 o superiore.\nSe sei arrivato a questa pagina da Google tocca qui\n\n\nMetodo 1 (Consigliato)\n\n\n\n * Il tuo device deve essere jailbrekkato con Unc0ver o Checkra1n\n\n\n * Aggiungi questa repository a Cydia / Zebra / Installer\n   \n   * Se hai problemi ad aggiungerla riprova con questo link\n   \n * Installa i seguenti pacchetti\n   \n   * libkrw\n   * dimentio\n   * TSS Saver\n     \n     * verifica che la versione sia 2.x e non 1.x\n   ",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://giacomo.tips/"
+    }
+}
+    </script>
+
+    <meta name="generator" content="Ghost 5.36" />
+    <link rel="alternate" type="application/rss+xml" title="Giacomo" href="https://giacomo.tips/rss/" />
+    
+    <script defer src="https://cdn.jsdelivr.net/ghost/sodo-search@~1.1/umd/sodo-search.min.js" data-key="a47434ced8f8c412786e4d70d2" data-styles="https://cdn.jsdelivr.net/ghost/sodo-search@~1.1/umd/main.css" data-sodo-search="https://giacomo.tips/" crossorigin="anonymous"></script>
+    <link href="https://giacomo.tips/webmentions/receive/" rel="webmention" />
+    <script defer src="/public/cards.min.js?v=1a5e5ecefb"></script>
+    <link rel="stylesheet" type="text/css" href="/public/cards.min.css?v=1a5e5ecefb">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/brands.min.css" integrity="sha512-+oRH6u1nDGSm3hH8poU85YFIVTdSnS2f+texdPGrURaJh8hzmhMiZrQth6l56P4ZQmxeZzd2DqVEMqQoJ8J89A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<style>
+    .gh-head-menu .nav-twitter a,
+    .gh-head-menu .nav-github a,
+    .gh-head-menu .nav-mastodon a {
+        font-size: 0 !important;
+    }
+
+    .gh-head-menu .nav-twitter a::before,
+    .gh-head-menu .nav-github a::before,
+    .gh-head-menu .nav-mastodon a::before {
+        font-family: "Font Awesome 6 Brands";
+        display: inline-block;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+    }
+
+    .gh-head-menu .nav-twitter a::before {content: "\f099"}
+    .gh-head-menu .nav-github a::before {content: "\f09b"}
+    .gh-head-menu .nav-mastodon a::before {content: "\f4f6"}
+</style><style>:root {--ghost-accent-color: #15171A;}</style>
+
+</head>
+<body class="page-template page-shsh-arm64e is-head-left-logo has-cover">
+<div class="viewport">
+
+    <header id="gh-head" class="gh-head outer">
+        <div class="gh-head-inner inner">
+            <div class="gh-head-brand">
+                <a class="gh-head-logo no-image" href="https://giacomo.tips">
+                        Giacomo
+                </a>
+                <button class="gh-search gh-icon-btn" aria-label="Search this site" data-ghost-search><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" width="20" height="20"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg></button>
+                <button class="gh-burger"></button>
+            </div>
+
+            <nav class="gh-head-menu">
+                <ul class="nav">
+    <li class="nav-home"><a href="https://giacomo.tips/">home</a></li>
+    <li class="nav-work"><a href="https://giacomo.tips/jbstatus/">work</a></li>
+    <li class="nav-whoami"><a href="https://giacomo.tips/whoami/">whoami</a></li>
+    <li class="nav-twitter"><a href="https://twitter.com/pancakeufo">twitter</a></li>
+    <li class="nav-mastodon"><a href="https://infosec.exchange/@pancakeufo">mastodon</a></li>
+    <li class="nav-github"><a href="https://github.com/pancakeufo">github</a></li>
+</ul>
+
+            </nav>
+
+            <div class="gh-head-actions">
+                        <button class="gh-search gh-icon-btn" data-ghost-search><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" width="20" height="20"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg></button>
+            </div>
+        </div>
+    </header>
+
+    <div class="site-content">
+        
+
+
+
+<main id="site-main" class="site-main">
+<article class="article post no-image">
+
+    <header class="article-header gh-canvas">
+
+        <h1 class="article-title">Salvare Blobs SHSH2 (A12-A14)</h1>
+
+
+    </header>
+
+    <section class="gh-content gh-canvas">
+        <hr><h4 id="-attenzione-">&#x26A0;&#xFE0F; ATTENZIONE &#x26A0;&#xFE0F;</h4><p>&#x2063;<br>Questa pagina si riferisce ai device con processore A12 o superiore.<br>Se sei arrivato a questa pagina da Google tocca <a href="https://giacomo.tips/shsh/">qui</a></p><hr><h3 id="metodo-1-consigliato-">Metodo 1 (Consigliato)</h3><p></p><!--kg-card-begin: markdown--><ul>
+<li>Il tuo device deve essere <em>jailbrekkato</em> con <a href="https://giacomo.tips/unc0ver">Unc0ver</a> o <a href="https://giacomo.tips/checkra1n">Checkra1n</a></li>
+</ul>
+<ul>
+<li>Aggiungi <a href="https://searchtweak.tk/add/?source=https://repo.1conan.com/">questa</a> repository a Cydia / Zebra / Installer
+<ul>
+<li>Se hai problemi ad aggiungerla riprova con <a href="https://searchtweak.tk/add/?source=http://repo.1conan.com/">questo</a> link</li>
+</ul>
+</li>
+<li>Installa i seguenti pacchetti
+<ul>
+<li><code>libkrw</code></li>
+<li><code>dimentio</code></li>
+<li><code>TSS Saver</code>
+<ul>
+<li>verifica che la versione sia 2.x e non 1.x</li>
+<li>se la versione &#xE8; 1.x sei sul pacchetto sbagliato</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<!--kg-card-end: markdown--><figure class="kg-card kg-image-card"><img src="https://giacomo.tips/content/images/2021/03/image-27-min-1.png" class="kg-image" alt loading="lazy" width="1773" height="1280" srcset="https://giacomo.tips/content/images/size/w600/2021/03/image-27-min-1.png 600w, https://giacomo.tips/content/images/size/w1000/2021/03/image-27-min-1.png 1000w, https://giacomo.tips/content/images/size/w1600/2021/03/image-27-min-1.png 1600w, https://giacomo.tips/content/images/2021/03/image-27-min-1.png 1773w" sizes="(min-width: 720px) 720px"></figure><!--kg-card-begin: markdown--><ul>
+<li>Apri ora l&apos;app <code>TSS Saver</code> che &#xE8; apparsa nella home del tuo telefono</li>
+<li>Tocca su <strong>Save Blobs!</strong> e attendi
+<ul>
+<li>Se appare il messaggio <code>Are you connected to the internet?</code> riprova pi&#xF9; tardi: il server &#xE8; sovraccarico</li>
+</ul>
+</li>
+<li>Quando appare il messaggio <code>Succesfully added to the queque</code> la procedura &#xE8; andata a buon fine</li>
+<li>Toccando il bottone <strong>Open Url</strong> si aprir&#xE0; una pagina nel web dove nel giro di un&apos;oretta i blobs saranno pronti per il download</li>
+</ul>
+<!--kg-card-end: markdown--><figure class="kg-card kg-image-card"><img src="https://giacomo.tips/content/images/2021/03/image-32-min.png" class="kg-image" alt loading="lazy" width="1773" height="1280" srcset="https://giacomo.tips/content/images/size/w600/2021/03/image-32-min.png 600w, https://giacomo.tips/content/images/size/w1000/2021/03/image-32-min.png 1000w, https://giacomo.tips/content/images/size/w1600/2021/03/image-32-min.png 1600w, https://giacomo.tips/content/images/2021/03/image-32-min.png 1773w" sizes="(min-width: 720px) 720px"></figure><hr><h3 id="metodo-2">Metodo 2</h3><p></p><!--kg-card-begin: markdown--><ul>
+<li>Il tuo device deve essere <em>jailbrekkato</em> con <a href="https://giacomo.tips/unc0ver">Unc0ver</a> o <a href="https://giacomo.tips/checkra1n">Checkra1n</a></li>
+</ul>
+<ul>
+<li>Aggiungi <a href="https://searchtweak.tk/add/?source=https://cydia.ichitaso.com/">questa</a> e <a href="https://searchtweak.tk/add/?source=https://repo.1conan.com/">questa</a> repository a Cydia / Zebra / Installer</li>
+<li>Installa i seguenti pacchetti
+<ul>
+<li><code>NonceSet143</code></li>
+<li><code>dimentio</code></li>
+<li><code>libkrw</code></li>
+</ul>
+</li>
+<li>Apri ora l&apos;app <code>NonceSet143</code> che &#xE8; apparsa nella tua schermata home</li>
+</ul>
+<ul>
+<li>Tocca a fianco della scritta <code>SetNonce</code></li>
+<li>Apparir&#xE0; la tastiera, premi <strong>Invio</strong></li>
+<li>A questo punto apparir&#xE0; il messaggio <code>Set Generator</code></li>
+<li>Di fianco a a <code>SetNonce</code> sar&#xE0; ora apparso <code>0x1111111111111111</code></li>
+</ul>
+<!--kg-card-end: markdown--><figure class="kg-card kg-image-card"><img src="https://giacomo.tips/content/images/2021/03/image-42.png" class="kg-image" alt loading="lazy" width="2000" height="1082" srcset="https://giacomo.tips/content/images/size/w600/2021/03/image-42.png 600w, https://giacomo.tips/content/images/size/w1000/2021/03/image-42.png 1000w, https://giacomo.tips/content/images/size/w1600/2021/03/image-42.png 1600w, https://giacomo.tips/content/images/2021/03/image-42.png 2365w" sizes="(min-width: 720px) 720px"></figure><!--kg-card-begin: markdown--><ul>
+<li>Apri ora su <code>Safari</code> il sito <code>shsh.host</code></li>
+<li>Seleziona il tuo dispositivo alla voce <code>Device</code>
+<ul>
+<li>Come visibile in foto noi abbiamo selezionato un iPhone 12 Pro</li>
+</ul>
+</li>
+<li>Torna su <code>SetNonce143</code> e tieni premuto di fianco a <code>Hexadecimal</code></li>
+<li>Tocca il bottone <code>Copia</code> che appare</li>
+<li>Torna su <code>Safari</code> e incolla il testo alla voce <code>ECID (hex)</code></li>
+</ul>
+<!--kg-card-end: markdown--><figure class="kg-card kg-image-card"><img src="https://giacomo.tips/content/images/2021/03/image-40-min-min.png" class="kg-image" alt loading="lazy" width="1775" height="1280" srcset="https://giacomo.tips/content/images/size/w600/2021/03/image-40-min-min.png 600w, https://giacomo.tips/content/images/size/w1000/2021/03/image-40-min-min.png 1000w, https://giacomo.tips/content/images/size/w1600/2021/03/image-40-min-min.png 1600w, https://giacomo.tips/content/images/2021/03/image-40-min-min.png 1775w" sizes="(min-width: 720px) 720px"></figure><!--kg-card-begin: markdown--><ul>
+<li>Torna su <code>SetNonce143</code> su <code>SetNonce143</code> e ripeti l&apos;operazione con il valore <code>Current Apnonce</code></li>
+</ul>
+<!--kg-card-end: markdown--><figure class="kg-card kg-image-card"><img src="https://giacomo.tips/content/images/2021/03/image-41-min.png" class="kg-image" alt loading="lazy" width="1184" height="1280" srcset="https://giacomo.tips/content/images/size/w600/2021/03/image-41-min.png 600w, https://giacomo.tips/content/images/size/w1000/2021/03/image-41-min.png 1000w, https://giacomo.tips/content/images/2021/03/image-41-min.png 1184w" sizes="(min-width: 720px) 720px"></figure><!--kg-card-begin: markdown--><ul>
+<li>Tocca ora <code>Non sono un robot</code> dopodich&#xE8; <code>Request APTicket</code></li>
+<li>Complimenti hai salvato i blobs!</li>
+</ul>
+<!--kg-card-end: markdown--><hr><h3 id="domande-extra">Domande &amp; Extra</h3><p></p><p>&#x1F914; <a href="https://t.me/locandajailbreak?ref=giacomo">Ho bisogno di aiuto!</a><br>&#x1F5DE; <a href="https://t.me/giacomotips?ref=giacomo">Canale Telegram</a><br>&#x2764;&#xFE0F; <a href="https://ko-fi.com/pancakeufo?ref=giacomo">Donazioni</a></p>
+    </section>
+
+</article>
+</main>
+
+
+    </div>
+
+    <footer class="site-footer outer">
+        <div class="inner">
+            <section class="copyright"><a href="https://giacomo.tips">Giacomo</a> &copy; 2023</section>
+            <nav class="site-footer-nav">
+                
+            </nav>
+            <div><a href="https://ghost.org/" target="_blank" rel="noopener">Powered by Ghost</a></div>
+        </div>
+    </footer>
+
+</div>
+
+
+<script
+    src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+    crossorigin="anonymous">
+</script>
+<script src="/assets/built/casper.js?v=1a5e5ecefb"></script>
+<script>
+$(document).ready(function () {
+    // Mobile Menu Trigger
+    $('.gh-burger').click(function () {
+        $('body').toggleClass('gh-head-open');
+    });
+    // FitVids - Makes video embeds responsive
+    $(".gh-content").fitVids();
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.20.1/tocbot.min.js"></script>
+<script>
+    tocbot.init({
+        // Where to render the table of contents.
+        tocSelector: '.gh-toc',
+        // Where to grab the headings to build the table of contents.
+        contentSelector: '.gh-content',
+        // Which headings to grab inside of the contentSelector element.
+        headingSelector: 'h1, h2, h3, h4',
+        // Ensure correct positioning
+        hasInnerContainers: true,
+    });
+</script>
+
+
+</body>
+</html>
