@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Redirecting...</title>
+  <script>
+    // Extract the URL parameter from the current URL
+    function getParameterByName(name) {
+      var match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
+      return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
+    }
+    
+    // Redirect to the specified URL
+    function redirect() {
+      var url = getParameterByName('url');
+      if (url) {
+        window.location.href = url;
+      }
+    }
+  </script>
+</head>
+<body onload="redirect()">
+  <h1>Redirecting...</h1>
+</body>
+</html>
